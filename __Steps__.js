@@ -21,4 +21,5 @@
  *  
  * create pages > Home > Banner 
  * daisy ui banner setup
+ * about section added with about component in home page
  */
