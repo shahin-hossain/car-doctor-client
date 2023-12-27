@@ -18,5 +18,7 @@
              <RouterProvider router={router} />
         </React.StrictMode>,
  * </div>
- * 
+ *  
+ * create pages > Home > Banner 
+ * daisy ui banner setup
  */
