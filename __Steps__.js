@@ -38,4 +38,8 @@
  * Manual Multiple data Mongo DB সে সেট করা হয়েছে। প্রথমে ক্লাইন্ট সাইট থেকে services data গুলো
  * কপি করে নিয়ে সেটা নতুন  একটা database create করে INSERT DOCUMENT করে, {}  এর মধ্যে data গুলো পেষ্ট করে দিতে হবে।
  * সেখান থেকে data access করে toArray() করে app.get() করে data send করেতে হবে।
+ * 
+ * change URL from client site service.jsx component
+ * book service link add id wise for service card
+ * create checkout page & crate form, id wise data load
  */
