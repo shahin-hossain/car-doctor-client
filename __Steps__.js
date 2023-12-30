@@ -22,4 +22,11 @@
  * create pages > Home > Banner 
  * daisy ui banner setup
  * about section added with about component in home page
+ * Service area component fetch fake data from local json
+ * login page, signup page, & Toggle 
+ * firebase auth config, auth provider, auth context 
+ * and crate user with sign up
+ * 
+ * 
+ * 
  */
