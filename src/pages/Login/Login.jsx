@@ -5,7 +5,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 
 const Login = () => {
 
-    const { user } = useContext(AuthContext);
+    const { user, logInUser } = useContext(AuthContext);
     console.log(user)
 
     const handleLogin = event => {
@@ -15,6 +15,12 @@ const Login = () => {
         const password = form.password.value;
 
         console.log(email, password)
+        logInUser(email, password)
+            .then(result => {
+                const LoggedUser = result.user;
+                console.log(LoggedUser)
+            })
+            .catch(error => console.log(error))
     }
     return (
         <div className="hero min-h-screen bg-base-200">

@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg'
+import { AuthContext } from '../../../providers/AuthProvider';
 
 const Navbar = () => {
+    const { logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+
+        logOut()
+            .then(() => {
+                console.log('User Logged Out')
+            })
+            .catch(error => console.log(error))
+    }
 
     // drop down menu & toggle bar menu জন্য nav bar এর items গুলোকে একটা variable এর মধ্যে রাখা হয়েছে।
     const navItems = <>
         <li><Link>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/login'>Login</Link></li>
+        <li><button onClick={handleLogOut} >Logout</button></li>
     </>
     return (
         <div className="navbar bg-base-100">

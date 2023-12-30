@@ -26,7 +26,8 @@
  * login page, signup page, & Toggle 
  * firebase auth config, auth provider, auth context 
  * and crate user with sign up
- * 
+ * onAuthStateChange
+ * user sign in / logout 
  * 
  * 
  */
