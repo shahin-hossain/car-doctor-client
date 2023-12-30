@@ -29,5 +29,13 @@
  * onAuthStateChange
  * user sign in / logout 
  * 
+ * SERVER
  * 
+ * setup express server with mongodb cors dotenv
+ * 
+ * MongoDB
+ * connect server with Mongo DB
+ * Manual Multiple data Mongo DB সে সেট করা হয়েছে। প্রথমে ক্লাইন্ট সাইট থেকে services data গুলো
+ * কপি করে নিয়ে সেটা নতুন  একটা database create করে INSERT DOCUMENT করে, {}  এর মধ্যে data গুলো পেষ্ট করে দিতে হবে।
+ * সেখান থেকে data access করে toArray() করে app.get() করে data send করেতে হবে।
  */

@@ -3,7 +3,7 @@ import img from '../../assets/images/login/login.svg';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 const SignUp = () => {
-    const { user, createUser } = useContext(AuthContext);
+    const { user, createUser, userUpdate } = useContext(AuthContext);
 
     const handleSignUp = event => {
         event.preventDefault();
@@ -12,14 +12,22 @@ const SignUp = () => {
         const email = form.email.value;
         const password = form.password.value;
 
+
         createUser(email, password)
             .then(result => {
                 const createdUser = result.user;
+                //update update
+                userUpdate(name)
                 console.log(createdUser)
+                alert('Account Create Successfully')
             })
             .catch(error => {
                 console.log(error)
             })
+
+
+
+
     }
     return (
         <div className="hero min-h-screen bg-base-200">
