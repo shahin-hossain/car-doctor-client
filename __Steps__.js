@@ -45,4 +45,6 @@
  * data fetch to server with handleBookService
  * crate new collection in carDoctor database
  * req accept form server using app.post
+ * set data to database and server res.send()
+ * login logout, username conditional nav
  */

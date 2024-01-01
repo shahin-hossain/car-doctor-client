@@ -19,9 +19,13 @@ const Navbar = () => {
     const navItems = <>
         <li><Link>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
-        <li><Link to='/login'>Login</Link></li>
-        <li><button onClick={handleLogOut} >Logout</button></li>
-        <li className='text-orange-600 p-2'>{user && user.displayName}</li>
+        {
+            user?.email ? <><li><button onClick={handleLogOut} >Logout</button></li>
+                <li className='text-orange-600 p-2'>{user && user.displayName}</li></>
+                : <li><Link to='/login'>Login</Link></li>
+        }
+
+
     </>
     return (
         <div className="navbar bg-base-100">

@@ -19,6 +19,9 @@ const Login = () => {
             .then(result => {
                 const LoggedUser = result.user;
                 console.log(LoggedUser)
+                if (LoggedUser) {
+                    alert('Login Successful')
+                }
             })
             .catch(error => console.log(error))
     }
