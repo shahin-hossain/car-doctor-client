@@ -42,4 +42,7 @@
  * change URL from client site service.jsx component
  * book service link add id wise for service card
  * create checkout page & crate form, id wise data load
+ * data fetch to server with handleBookService
+ * crate new collection in carDoctor database
+ * req accept form server using app.post
  */
