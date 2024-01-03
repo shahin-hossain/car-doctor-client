@@ -21,9 +21,10 @@ const CheckOut = () => {
             email,
             service: title,
             service_id: service_id,
-            price
+            price,
+            img
         }
-
+        //send bookings data to server & database
         fetch(`http://localhost:5000/bookings`, {
             method: 'POST',
             headers: {

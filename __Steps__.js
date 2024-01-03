@@ -47,4 +47,20 @@
  * req accept form server using app.post
  * set data to database and server res.send()
  * login logout, username conditional nav
+ * checkout page
+ * crate checkout form
+ * fetch data from server service id wise
+ *  add default input field in checkout form
+ * get email using useContext(AuthContext)
+ * create a object with necessary data like, email, title, serviceId, service, img etc.
+ * and post booking data database 
+ * 
+ * server side 
+ * set query options for some specific data with query object give property value 1 or 0
+ * get data with query 
+ * find data query wise form data base and res.send
+ * 
+ * create booking page 
+ * conditional nav name My bookings with Link Route.
+ * fetch data with query email
  */
