@@ -14,7 +14,7 @@ const Navbar = () => {
             })
             .catch(error => console.log(error))
     }
-    console.log(user)
+    // console.log(user)
     // drop down menu & toggle bar menu জন্য nav bar এর items গুলোকে একটা variable এর মধ্যে রাখা হয়েছে।
     const navItems = <>
         <li><Link>Home</Link></li>
