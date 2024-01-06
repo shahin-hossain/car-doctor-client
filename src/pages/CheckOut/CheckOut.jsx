@@ -42,7 +42,7 @@ const CheckOut = () => {
     }
     return (
         <div>
-            <h2>Book Service: {title} </h2>
+            <h2 className='text-center text-3xl'>Book Service: {title} </h2>
 
             <form onSubmit={handleBookService} className="card-body">
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>

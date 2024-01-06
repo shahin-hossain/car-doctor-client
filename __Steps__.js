@@ -63,4 +63,11 @@
  * create booking page 
  * conditional nav name My bookings with Link Route.
  * fetch data with query email
+ * 
+ * create Private Route
+ *   - set loading, condition & navigate
+ * create bookingRow Page
+ *   - create table on booking page
+ *   - table row set in bookingRow page
+ *   - props showing on the page
  */
